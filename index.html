@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie app</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_logo">
+        <a href="#">📹 MovieApp</a>
+      </div>
+      <form action="http://google.com/search" target="_blank">
+        <input
+          type="search"
+          name="q"
+          class="header_search"
+          placeholder="Search"
+        />
+      </form>
+    </header>
+
+    <div class="container">
+      <div class="movies"></div>
+    </div>
+
+    <button id="scrollToTopBtn">&#8613;</button>
+
+    <hr />
+
+    <footer>
+      <div class="footer_contacts">
+        <a href="#" data-modal="modal-one">Contact us</a>
+        <a href="#" data-modal="modal-two">Cookie Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+
+      <div class="footer_icons">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="/img/icon-instagram-50.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="/img/icon-facebook-50.png" alt="facebook icon"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- MODALS WINDOWS -->
+    <div class="modal" id="modal-one">
+      <div class="modal-bg modal-exit">
+        <button class="modal-close modal-exit">&#10006;</button>
+      </div>
+      <div class="modal-container">
+        <h2>email: veres.maria.dev@gmail.com</h2>
+        <h2>skype: live:b0b9447fda29b026</h2>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-two">
+      <div class="modal-bg modal-exit">
+        <button class="modal-close modal-exit">&#10006;</button>
+      </div>
+      <div class="modal-container">
+        <h3>
+          This website uses cookies. We use cookies to personalise content and
+          ads, to provide social media features and to analyse our traffic. We
+          also share information about your use of our site with our social
+          media, advertising and analytics partners who may combine it with
+          other information that you have provided to them or that they have
+          collected from your use of their services.
+        </h3>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
